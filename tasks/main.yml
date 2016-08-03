@@ -6,7 +6,7 @@
     name: "{{ item.name }}"
     state: present
     enablerepo: "{{ item.enablerepo | default('') }}"
-  with_items: httpd_install_from
+  with_items: "{{ httpd_install_from }}"
   tags: ['httpd']
 
 - name: chmod log dir

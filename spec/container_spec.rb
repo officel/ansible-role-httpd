@@ -8,3 +8,11 @@ describe file('/etc/httpd/conf') do
   it { should be_directory }
 end
 
+describe file('/etc/httpd/conf.d') do
+  it { should be_directory }
+end
+
+describe file('/var/log/httpd') do
+  it { should be_mode 755 }
+end
+
