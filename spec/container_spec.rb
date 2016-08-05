@@ -24,3 +24,8 @@ end
 describe file('/etc/logrotate.d/httpd') do
   it { should be_file }
 end
+
+describe service('httpd') do
+  it { should be_enabled }
+end
+

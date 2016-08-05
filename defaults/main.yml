@@ -8,3 +8,5 @@ httpd_install_from:
 
 var_log_httpd_permission: "0755"
 
+httpd_service_on: yes
+
